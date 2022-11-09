@@ -1,0 +1,61 @@
+@import '../../index.scss';
+
+.header {
+  max-width: 1110px;
+  width: 100%;
+  margin-bottom: 321px;
+  @include mq(1200px) {
+    margin-bottom: 249px;
+  }
+  @include mq(760px) {
+    margin-bottom: 165px;
+  }
+  svg {
+    margin-bottom: 127px;
+    @include mq(1200px) {
+      margin-bottom: 95px;
+    }
+    @include mq(760px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: #191826;
+    margin-bottom: 40px;
+    max-width: 865px;
+    @include mq(1200px) {
+      max-width: 520px;
+      font-size: 64px;
+      line-height: 64px;
+      letter-spacing: -0.727273px;
+      margin-bottom: 28px;
+    }
+    @include mq(760px) {
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: -0.454545px;
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #191826;
+    max-width: 865px;
+    @include mq(1200px) {
+      font-size: 18px;
+      line-height: 28px;
+      max-width: 514px;
+    }
+    @include mq(760px) {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}

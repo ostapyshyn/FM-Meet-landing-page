@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.footer {
+  display: flex;
+  width: 100%;
+  max-width: 1110px;
+  justify-content: space-between;
+  gap: 64px;
+  .logo {
+    @include mq(1200px) {
+      width: 100%;
+      margin-bottom: -32px;
+    }
+  }
+  @include mq(1200px) {
+    flex-wrap: wrap;
+  }
+
+  p {
+    transform: translateX(-113px);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #191826;
+    max-width: 370px;
+    span {
+      font-weight: 700;
+    }
+    @include mq(1200px) {
+      flex-wrap: wrap;
+      transform: translateX(0);
+    }
+
+    .email {
+      font-weight: 300;
+      display: block;
+      @include mq(760px) {
+        display: inline;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    align-self: center;
+    li {
+      cursor: pointer;
+      svg {
+        &:active {
+          transform: scale(0.98);
+          path {
+            fill: #fa7453;
+          }
+        }
+      }
+    }
+  }
+}

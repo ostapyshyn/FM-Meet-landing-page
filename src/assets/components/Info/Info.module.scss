@@ -1,0 +1,58 @@
+@import '../../index.scss';
+
+.info {
+  margin-bottom: 202px;
+  width: 100%;
+  max-width: 1110px;
+  height: 600px;
+  background: #191826;
+  border-radius: 12px;
+  position: relative;
+
+  @include mq(700px) {
+    margin-left: -40px;
+    margin-right: -40px;
+    width: calc(100% + 80px);
+    margin-bottom: 421px;
+  }
+
+  img {
+    width: 312px;
+    height: 642px;
+    position: absolute;
+    left: 102px;
+    top: -213px;
+    z-index: 2;
+    @include mq(1200px) {
+      width: 270px;
+      height: 556px;
+      left: 65px;
+      top: -138px;
+    }
+    @include mq(700px) {
+      width: 209px;
+      height: 430px;
+      left: 50%;
+      top: -93px;
+      transform: translateX(-50%);
+    }
+  }
+  .svg {
+    width: 312px;
+    height: 642px;
+    position: absolute;
+    left: 335px;
+    top: -38px;
+    z-index: 1;
+    @include mq(1200px) {
+      width: 280px;
+      height: 420px;
+      left: 265px;
+    }
+    @include mq(700px) {
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
+}
