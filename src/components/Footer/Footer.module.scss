@@ -1,0 +1,43 @@
+@import '../../';
+
+.footer {
+  background: linear-gradient(hsla(192, 37%, 48%, 0.9), hsla(192, 37%, 48%, 0.9)),
+    url(../../assets/desktop/image-footer.jpg) no-repeat center center/cover;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding-top: 116px;
+    padding-bottom: 104px;
+    h3 {
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 44px;
+      color: #fafafa;
+      max-width: 350px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      color: #fafafa;
+      max-width: 350px;
+    }
+    button {
+      background: #855fb1;
+      border-radius: 29px;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 26px;
+      color: #ffffff;
+      padding-block: 16px;
+      padding-inline: 40px;
+      span {
+        color: #d9b8ff;
+      }
+    }
+  }
+}
