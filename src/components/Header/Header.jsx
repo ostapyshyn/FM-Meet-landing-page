@@ -11,8 +11,10 @@ const Header = () => {
         Meet makes it easy to connect with others face-to-face virtually and collaborate across any
         device.
       </p>
-      <button>Download v1.3</button>
-      <button>What is it?</button>
+      <div className={styles.buttons}>
+        <button>Download v1.3</button>
+        <button className={styles.about}>What is it?</button>
+      </div>
     </section>
   );
 };
