@@ -15,8 +15,25 @@
   margin-bottom: 214px;
   overflow: hidden;
 
+  @include mq(1244px) {
+    background-image: none;
+  }
+
+  .image {
+    display: none;
+    @include mq(1244px) {
+      display: block;
+      width: 820px;
+      margin-bottom: 72px;
+    }
+  }
+
   svg {
     margin-bottom: 108px;
+
+    @include mq(1244px) {
+      margin-bottom: 64px;
+    }
   }
 
   h1 {
