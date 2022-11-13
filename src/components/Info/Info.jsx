@@ -12,10 +12,18 @@ const Info = () => {
   return (
     <section className={styles.info}>
       <div className={styles.images}>
-        <img src={woman} alt="woman" />
-        <img src={women} alt="women" />
-        <img src={men} alt="men" />
-        <img src={man} alt="man" />
+        <div>
+          <img src={woman} alt="woman" />
+        </div>
+        <div>
+          <img src={women} alt="women" />
+        </div>
+        <div>
+          <img src={men} alt="men" />
+        </div>
+        <div>
+          <img src={man} alt="man" />
+        </div>
       </div>
 
       <div className={styles.about}>

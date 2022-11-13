@@ -6,32 +6,67 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../../assets/desktop/image-hero-left.png),
-    url(../../assets/desktop/image-hero-right.png);
-  background-repeat: no-repeat;
-  background-position: left -33px top 90px, right -33px top 149px;
-  width: 100%;
-  padding-bottom: 100px;
-  margin-bottom: 214px;
-  overflow: hidden;
 
-  @include mq(1244px) {
+  width: 100%;
+
+  margin-bottom: 304px;
+  overflow: hidden;
+  @include mq(992px) {
+    margin-bottom: 233px;
+  }
+  .chat {
+    display: flex;
+    .left_img {
+      background-image: url(../../assets/desktop/image-hero-left.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      transform: translateY(-50px);
+      width: 394px;
+      height: 303px;
+      @include mq(992px) {
+        background-image: none;
+      }
+    }
+    .right_img {
+      background-image: url(../../assets/desktop/image-hero-right.png);
+      background-repeat: no-repeat;
+      background-position: left top 10px;
+      width: 394px;
+      height: 303px;
+      padding-bottom: 10px;
+      box-sizing: content-box;
+      @include mq(992px) {
+        background-image: none;
+      }
+    }
+  }
+  .group_chat {
+    margin-inline: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    color: #28283d;
+  }
+
+  @include mq(992px) {
     background-image: none;
   }
 
   .image {
     display: none;
-    @include mq(1244px) {
+    @include mq(992px) {
       display: block;
       width: 820px;
       margin-bottom: 72px;
+      max-width: none;
     }
   }
 
   svg {
     margin-bottom: 108px;
 
-    @include mq(1244px) {
+    @include mq(992px) {
       margin-bottom: 64px;
     }
   }
@@ -44,6 +79,12 @@
     color: #28283d;
     max-width: 445px;
     margin-bottom: 34px;
+    @include mq(992px) {
+      font-size: 48px;
+      line-height: 48px;
+      max-width: 339px;
+      margin-bottom: 24px;
+    }
   }
   p {
     font-weight: 500;
@@ -53,6 +94,10 @@
     color: #87879d;
     max-width: 540px;
     margin-bottom: 32px;
+
+    @include mq(992px) {
+      font-size: 16px;
+    }
   }
   button {
     background: #4d96a9;

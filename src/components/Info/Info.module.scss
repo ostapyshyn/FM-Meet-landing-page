@@ -2,14 +2,23 @@
 
 .info {
   max-width: 1110px;
-  margin: 0 auto;
   margin-bottom: 184px;
+  margin-inline: 40px;
+  @include mq(767px) {
+    margin-inline: 24px;
+  }
 
   .images {
     display: flex;
     gap: 30px;
-    height: 242px;
+    max-width: 1110px;
+    // height: 242px;
     margin-bottom: 80px;
+
+    @include mq(992px) {
+      gap: 11px;
+    }
+
     img {
       background: #d8d8d8;
       border-radius: 8px;
