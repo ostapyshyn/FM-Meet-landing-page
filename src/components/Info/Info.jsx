@@ -5,23 +5,20 @@ import women from '../../assets/desktop/image-women-videochatting.jpg';
 import men from '../../assets/desktop/image-men-in-meeting.jpg';
 import man from '../../assets/desktop/image-man-texting.jpg';
 
-// import { ReactComponent as Logo } from '../../assets/bg-pattern-2.svg';
-// import Card from '../Card/Card';
-
 const Info = () => {
   return (
     <section className={styles.info}>
       <div className={styles.images}>
-        <div>
+        <div className={styles.image}>
           <img src={woman} alt="woman" />
         </div>
-        <div>
+        <div className={styles.image}>
           <img src={women} alt="women" />
         </div>
-        <div>
+        <div className={styles.image}>
           <img src={men} alt="men" />
         </div>
-        <div>
+        <div className={styles.image}>
           <img src={man} alt="man" />
         </div>
       </div>

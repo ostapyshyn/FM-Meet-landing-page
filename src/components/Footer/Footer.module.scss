@@ -4,6 +4,13 @@
   background: linear-gradient(hsla(192, 37%, 48%, 0.9), hsla(192, 37%, 48%, 0.9)),
     url(../../assets/desktop/image-footer.jpg) no-repeat center center/cover;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq(500px) {
+    background: linear-gradient(hsla(192, 37%, 48%, 0.9), hsla(192, 37%, 48%, 0.9)),
+      url(../../assets/mobile/image-footer.jpg) no-repeat center center/cover;
+  }
 
   .container {
     display: flex;
@@ -13,15 +20,31 @@
     max-width: 1110px;
     padding-top: 116px;
     padding-bottom: 104px;
+    margin-inline: 40px;
+    width: 100%;
+    @include mq(992px) {
+      flex-direction: column;
+      text-align: center;
+      padding-top: 92px;
+      padding-bottom: 66px;
+    }
+    @include mq(767px) {
+      padding-bottom: 72px;
+    }
+
     h3 {
       font-weight: 900;
       font-size: 40px;
       line-height: 44px;
       color: #fafafa;
       max-width: 350px;
-      @include mq(768px) {
+      @include mq(992px) {
+        margin-bottom: 32px;
+      }
+      @include mq(767px) {
         font-size: 32px;
         line-height: 36px;
+        margin-bottom: 24px;
       }
     }
     p {
@@ -30,6 +53,13 @@
       line-height: 26px;
       color: #fafafa;
       max-width: 350px;
+      @include mq(992px) {
+        margin-bottom: 40px;
+        max-width: 573px;
+      }
+      @include mq(767px) {
+        margin-bottom: 32px;
+      }
     }
     button {
       background: #855fb1;
@@ -38,6 +68,7 @@
       font-size: 16px;
       line-height: 26px;
       color: #ffffff;
+      width: 193px;
       padding-block: 16px;
       padding-inline: 40px;
       span {

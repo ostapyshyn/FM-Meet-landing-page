@@ -14,14 +14,27 @@
     max-width: 1110px;
     // height: 242px;
     margin-bottom: 80px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 
     @include mq(992px) {
       gap: 11px;
+    }
+    @include mq(767px) {
+      gap: 25px;
+      flex-wrap: wrap;
     }
 
     img {
       background: #d8d8d8;
       border-radius: 8px;
+    }
+
+    .image {
+      @include mq(767px) {
+        max-width: 151px;
+      }
     }
   }
 

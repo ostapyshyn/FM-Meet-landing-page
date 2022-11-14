@@ -12,7 +12,10 @@
   margin-bottom: 304px;
   overflow: hidden;
   @include mq(992px) {
-    margin-bottom: 233px;
+    margin-bottom: 287px;
+  }
+  @include mq(767px) {
+    margin-bottom: 268px;
   }
   .chat {
     display: flex;
@@ -25,6 +28,7 @@
       height: 303px;
       @include mq(992px) {
         background-image: none;
+        display: none;
       }
     }
     .right_img {
@@ -37,6 +41,7 @@
       box-sizing: content-box;
       @include mq(992px) {
         background-image: none;
+        display: none;
       }
     }
   }
@@ -47,6 +52,10 @@
     align-items: center;
     flex-shrink: 0;
     color: #28283d;
+    @include mq(992px) {
+      flex-shrink: 1;
+      margin-inline: 24px;
+    }
   }
 
   @include mq(992px) {
@@ -57,9 +66,9 @@
     display: none;
     @include mq(992px) {
       display: block;
-      width: 820px;
+      width: auto;
       margin-bottom: 72px;
-      max-width: none;
+      max-width: 110%;
     }
   }
 
@@ -68,6 +77,9 @@
 
     @include mq(992px) {
       margin-bottom: 64px;
+    }
+    @include mq(767px) {
+      margin-bottom: 54px;
     }
   }
 
@@ -85,9 +97,10 @@
       max-width: 339px;
       margin-bottom: 24px;
     }
-    @include mq(768px) {
+    @include mq(767px) {
       font-size: 40px;
       line-height: 44px;
+      max-width: 270px;
     }
   }
   p {
@@ -107,6 +120,7 @@
     background: #4d96a9;
     border-radius: 29px;
     font-weight: 900;
+    width: 193px;
     font-size: 16px;
     line-height: 26px;
     color: #ffffff;
@@ -131,9 +145,15 @@
     :active {
       background-color: #b18bdd;
     }
+    width: 139px;
+    padding-inline: 29px;
   }
   .buttons {
     display: flex;
     gap: 16px;
+    @include mq(767px) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }
