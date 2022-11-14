@@ -19,6 +19,10 @@
       line-height: 44px;
       color: #fafafa;
       max-width: 350px;
+      @include mq(768px) {
+        font-size: 32px;
+        line-height: 36px;
+      }
     }
     p {
       font-weight: 500;
