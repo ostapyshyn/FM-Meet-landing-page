@@ -8,7 +8,9 @@ import styles from './Footer.module.scss';
 const Footer = () => {
   return (
     <section className={styles.footer}>
-      {/* <Logo className={styles.logo} /> */}
+      <div className={styles.num}>
+        02 <div className={styles.line}></div>
+      </div>
       <div className={styles.container}>
         <h3>Experience more together</h3>
         <p>

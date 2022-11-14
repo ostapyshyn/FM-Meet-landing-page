@@ -2,10 +2,36 @@
 
 .info {
   max-width: 1110px;
+  position: relative;
   margin-bottom: 184px;
   margin-inline: 40px;
   @include mq(767px) {
     margin-inline: 24px;
+  }
+  .num {
+    height: 56px;
+    width: 56px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    color: #87879d;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -118px;
+    .line {
+      height: 84px;
+      opacity: 0.25;
+      border-right: 1px solid #87879d;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -83px;
+      position: absolute;
+    }
   }
 
   .images {

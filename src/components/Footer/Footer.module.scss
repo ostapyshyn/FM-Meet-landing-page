@@ -11,6 +11,35 @@
     background: linear-gradient(hsla(192, 37%, 48%, 0.9), hsla(192, 37%, 48%, 0.9)),
       url(../../assets/mobile/image-footer.jpg) no-repeat center center/cover;
   }
+  position: relative;
+
+  .num {
+    height: 56px;
+    width: 56px;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 16px;
+    color: #87879d;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -26px;
+    z-index: 1;
+    background: #fafafa;
+    .line {
+      height: 84px;
+      opacity: 0.25;
+      border-right: 1px solid #87879d;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -83px;
+      position: absolute;
+    }
+  }
 
   .container {
     display: flex;

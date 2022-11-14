@@ -8,6 +8,9 @@ import man from '../../assets/desktop/image-man-texting.jpg';
 const Info = () => {
   return (
     <section className={styles.info}>
+      <div className={styles.num}>
+        01 <div className={styles.line}></div>
+      </div>
       <div className={styles.images}>
         <div className={styles.image}>
           <img src={woman} alt="woman" />
