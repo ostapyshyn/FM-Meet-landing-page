@@ -21,7 +21,9 @@ const Header = () => {
             any device.
           </p>
           <div className={styles.buttons}>
-            <button>Download v1.3</button>
+            <button>
+              Download <span>v1.3</span>
+            </button>
             <button className={styles.about}>What is it?</button>
           </div>
         </div>

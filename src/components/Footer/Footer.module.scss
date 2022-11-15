@@ -7,6 +7,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include mq(992px) {
+    background: linear-gradient(hsla(192, 37%, 48%, 0.9), hsla(192, 37%, 48%, 0.9)),
+      url(../../assets/tablet/image-footer.jpg) no-repeat center center/cover;
+  }
   @include mq(500px) {
     background: linear-gradient(hsla(192, 37%, 48%, 0.9), hsla(192, 37%, 48%, 0.9)),
       url(../../assets/mobile/image-footer.jpg) no-repeat center center/cover;

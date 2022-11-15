@@ -88,7 +88,7 @@
       max-width: 445px;
       margin: 0 auto;
       margin-bottom: 32px;
-      @include mq(768px) {
+      @include mq(767px) {
         font-size: 32px;
       }
     }
