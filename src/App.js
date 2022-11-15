@@ -5,11 +5,11 @@ import Info from './components/Info';
 
 function App() {
   return (
-    <div className="App">
+    <main className="App">
       <Header />
       <Info />
       <Footer />
-    </div>
+    </main>
   );
 }
 
